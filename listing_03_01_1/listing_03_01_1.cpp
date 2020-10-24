@@ -13,4 +13,4 @@ void add_to_list(int new_value) {
 bool list_contains(int value_to_find) {
 	std::lock_guard<std::mutex> guard(some_mutex);
 	return  std::find(some_list.begin(), some_list.end(), value_to_find) != some_list.end();
-}
+}//
